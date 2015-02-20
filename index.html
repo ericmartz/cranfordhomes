@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cranford Homes - Home Builder and Remodeler in Coweta County, GA</title>
+
+	<!--[if lt IE 9]>
+	   <script>
+	      document.createElement('header');
+	      document.createElement('nav');
+	   </script>
+	<![endif]-->
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto:500,700,400,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Gilda+Display' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/unsemantic-grid-responsive.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+	<script type="text/javascript" src="scripts/jcarousel.js"></script>
+	<script type="text/javascript" src="scripts/cycle.js"></script>
+</head>
+<body>
+<div class="container">
+	<header class="clearfix">
+		<div class="grid-75">
+			<nav>
+				<ul>
+		          <li class="nav"><a href="index.html">Home</a></li>
+		          <li class="nav">
+		          	<a href="home-building.html">Build</a>
+		          	<ul>
+		          		<li class="nav"><a href="home-building.html#exteriors">Exteriors</a></li>
+		          		<li class="nav"><a href="home-building.html#kitchens">Kitchen</a></li>
+		          		<li class="nav"><a href="home-building.html#living_room">Living Room</a></li>
+		          		<li class="nav"><a href="home-building.html#dining_room">Dining Room</a></li>
+		          		<li class="nav"><a href="home-building.html#bathrooms">Bathrooms</a></li>
+		          		<li class="nav"><a href="home-building.html#recreational_area">Recreational Area</a></li>
+		          	</ul>
+		          </li>
+		          <li class="nav">
+		          	<a href="remodeling.html">Remodel</a>
+		          	<!--<ul>
+		          		<li class="nav"><a href="remodeling.html#kitchens">Kitchen</a></li>
+		          		<li class="nav"><a href="remodeling.html#living_room">Living Room</a></li>
+		          		<li class="nav"><a href="remodeling.html#dining_room">Dining Room</a></li>
+		          		<li class="nav"><a href="remodeling.html#bathrooms">Bathrooms</a></li>
+		          		<li class="nav"><a href="remodeling.html#recreational_area">Recreational Area</a></li>
+		          	</ul>-->
+		          </li>
+		          <li class="nav"><a href="about.html">About Us</a></li>
+		          <li class="nav"><a href="contact.html">Contact</a></li>
+		          <li class="nav"><a href="testimonials.html">Testimonials</a></li>
+		        </ul>
+	        </nav>
+		</div>
+		<div class="grid-25">
+			<center><img class="logo" src="img/cranford_homes_logo.jpg" alt="Cranford Homes Logo"></center>
+		</div>
+	</header>
+	<div class="grid-100 homepage-img">
+		<center>
+		<div id="picture-carousel" class="jcarousel">
+		    <ul>
+		    	<li><img src="img/homes/IMG_0331.JPG" alt="Two door entry with wreaths for decoration"></li>
+		    	<li><img src="img/homes/DSC04244.jpg" alt="Pavillion with fireplace and kitchen area overlooking a lake"></li>
+		    	<li><img src="img/homes/IMG_0137.JPG" alt="Screened back porch built by Cranford Homes"></li>
+		        <li><img src="img/homes/IMG_0117.JPG" alt="3 car garage viewed from front porch"></li>
+		        <li><img src="img/homes/IMG_0126.JPG" alt="Back porch with fireplace"></li>
+		        <li><img src="img/homes/IMG_0132.JPG" alt="View of back porch and basement entry"></li>
+		        <li><img src="img/homes/IMG_0332.JPG" alt="Two car garage of home built in Coweta County, GA"></li>
+		        <li><img src="img/homes/IMG_0345.JPG" alt="Screened back porch with lounging area"></li>
+		    </ul>
+		</div>
+		</center>
+	</div> <!-- End Homepage Image Div -->
+	<div class="grid-40 social-media">
+		<center>
+			<a href="https://www.facebook.com/CranfordHomes">
+				<img src="img/social-media/facebook.png" alt="Link to Cranford Homes Facebook Page">
+			</a>
+			<a data-pin-do="embedUser" href="http://www.pinterest.com/cranfordhomes/" data-pin-scale-width="80" data-pin-scale-height="320" data-pin-board-width="400">
+				<img src="img/social-media/pinterest.png" alt="Cranford Homes Pinterest">
+			</a>
+			<a href="http://www.houzz.com/pro/cranfordhomes/cranford-homes-inc">
+				<img src="http://www.houzz.com/res/1931/pic/badge181_25.png?v=1931" alt="Remodeling and Home Design" width="188" height="32" border="0" />
+			</a>	
+		</center>
+	</div>
+	<div class="grid-60 testimonial">
+		<div id="testimonial-carousel" class="jcarousel">
+			<ul>
+				<li class="testimonial"><center>We are delighted with our Billy Cranford built home.</center></li>
+				<li class="testimonial"><center>Billy Cranford is an experienced builder who is easy to work with and will tailor his designs to fit your individual needs.</center></li>
+				<li class="testimonial"><center>Wonderful design, executed in a high quality, at a fair price!</center></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>
+
+<script>
+	$(function() {
+	    $('.jcarousel')
+	        .jcarousel({
+	            wrap: 'circular',
+	            center: true,
+	            animation: {
+			        duration: 1200,
+			        easing:   'linear',
+			        complete: function() {
+			        }
+			    }
+	        })
+	        .jcarouselAutoscroll({
+	            interval: 4000,
+	            target: '+=1',
+	            autostart: true
+	        })
+	    ;
+	});
+</script>
+
+</body>
+</html>

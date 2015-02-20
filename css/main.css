@@ -1,0 +1,258 @@
+a:link { text-decoration:none;color:#ffffff;}
+a:visited { text-decoration:none;color:#ffffff;}
+a:active { text-decoration:none;color:#F00;}
+a:hover { text-decoration:none;color:#000000;}
+a img { border:none; }
+
+/*
+General
+*/
+
+.img-border {
+	border: 4px solid white;
+	border-radius: 1em;
+}
+
+header, nav { 
+	display: block;
+	background-color: #4867D6;
+}
+
+body {
+	margin: auto;
+	font-size: 16px;
+	background-color: #8f8f8f;
+}
+
+nav {
+	height: 2.6em;
+	border-radius: .5em;
+	padding-left: 5em;
+	float: left;
+}
+
+.logo {
+	float: left;
+	margin-top: .25em;
+	margin-bottom: .25em;
+	border-radius: 1em;
+}
+
+@media screen and (max-width: 1000px) {
+	.logo {
+		height: 62.25px;
+		width: 150px;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.logo {
+		height: 41.54px;
+		width: 100px;
+	}
+}
+
+.headline-text, h1 {
+	font-family: 'Gilda Display', serif;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.general-body-text, p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14pt;
+	font-weight: lighter;
+}
+
+.homepage-img {
+	margin-top: 1em;
+	height: 500px;
+	overflow: hidden;
+}
+
+#myGallery {
+	width: 100% !important;
+	height: 450px !important;
+}
+
+#picture-carousel {
+	height: 450px;
+	width: 640px;
+	border: .25em solid white;
+	border-radius: .25em;
+}
+
+#testimonial-carousel {
+	width: 650px;
+	float:right;
+}
+
+.social-media {
+	margin-top: 0;
+}
+
+/*
+Navigation
+*/
+ul {
+	padding-top: .8em;
+}
+
+ul li {
+	position:relative;
+	display: inline;
+	padding-right: .75em;
+	font-family: 'Gilda Display', serif;
+	font-size: 1.5em;
+}
+
+@media screen and (max-width: 1100px) {
+	nav {
+		padding-left: 0;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	ul li {
+		font-size: 1.25em;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	ul {
+		padding-top: 0;
+	}	
+
+	ul li {
+		padding-right: .5em;
+		font-size: 1em;
+	}
+}
+
+nav > ul > li ul {
+    display: none; 
+    font-size: .5em; 
+}
+
+nav > ul > li:hover ul {
+    display: inline;
+}
+
+nav > ul > li > ul li {
+    display: inline;
+}​
+
+nav > ul > li {
+    position: relative;
+}
+
+nav > ul > li ul {
+    position: absolute;
+    top: 2em;
+    left: -2.5em;
+}
+
+li ul {
+    width: 700px;
+}
+
+/*
+Home
+*/
+.testimonial, .jcarousel {
+	font-family: 'Tangerine', cursive;
+	font-size: 24pt;
+}
+
+.testimonial {
+	padding: 0;
+}
+
+.testimonial-box {
+	margin: 1em;
+	max-width: 100%;
+	background-color: #FFF;
+	height: 25%;
+	border-radius: 1em;
+	padding: 1em;
+	float: left;
+}
+
+/*
+About Us
+*/
+.caption {
+	font-family: 'Roboto', sans-serif;
+	font-size: 10pt;
+	font-weight: lighter;
+}
+
+/*
+Form stuff
+*/
+:invalid { 
+  border: 1px solid #CE2029;
+}
+
+:required {
+  border-color: gray;
+}
+
+form {
+  width:100%;
+  margin:1%;
+}
+
+input, textarea {
+  font-family: Helvetica, Arial, sans-serif;
+  border:1px solid gray;
+  font-size:1.5em;
+  width:15em;
+  min-height:1.5em;
+  display:block;
+  margin-bottom:15px;
+  margin-top:5px;
+  outline: none;
+}
+
+input[type=submit] {
+  background:#1435AD;
+  padding:10px;
+  color:#FFF;
+}
+
+/*
+This is the visible area of you carousel.
+Set a width here to define how much items are visible.
+The width can be either fixed in px or flexible in %.
+Position must be relative!
+*/
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+
+/*
+This is the container of the carousel items.
+You must ensure that the position is relative or absolute and
+that the width is big enough to contain all items.
+*/
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+These are the item elements. jCarousel works best, if the items
+have a fixed width and height (but it's not required).
+*/
+.jcarousel li {
+    /* Required only for block elements like <li>'s */
+    float: left;
+    width: 640px;
+}
